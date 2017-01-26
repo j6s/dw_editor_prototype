@@ -1,0 +1,139 @@
+/* general page styles */
+body {
+    font-family: Arial;
+    color: #fff;
+    background: #121212;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* general code styles */
+textarea.code {
+    background: #121212;
+    color: #fff;
+    font-family: monospace;
+    padding: 25px;
+}
+
+.team_blue textarea.code, .team_blue {
+    border: 3px solid #01a8f3;
+}
+
+.team_red textarea.code, .team_red {
+    border: 3px solid #e71e62;
+}
+
+/* team view */
+.team {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.team .primary {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+}
+
+.team .secondary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+}
+
+.team .tertiary {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+}
+/* disable secondary and tertiary */
+.team .secondary, .team .tertiary {
+    pointer-events: none;
+    opacity: .5;
+}
+
+/* control bar for team view */
+.controlBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+}
+
+.button {
+    flex-grow: 1;
+    height: 40px;
+    line-height: 40px;
+    background-color: #444;
+    text-align: center;
+    color: #fff;
+}
+a {
+    color: #fff;
+}
+
+.red .button.primary {
+    background: #e71e62;
+    color: white;
+}
+
+.blue .button.primary {
+    background: #01a8f3;
+    color: white;
+}
+
+.red .button {
+    border: 6px solid #e71e62;
+    border-bottom: none;
+}
+
+.blue .button {
+    border: 6px solid #01a8f3;
+    border-bottom: none;
+}
+
+
+/* overview */
+.overview .team_red, .overview .team_blue {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width:50%;
+}
+
+.overview .team_blue {
+    left: 50%;
+}
+
+.overview .html, .overview .css, .overview .js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 33%;
+}
+
+.overview .css {
+    top: 33%;
+}
+
+.overview .js {
+    top: 66%;
+    bottom: 0;
+    height: auto;
+}

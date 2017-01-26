@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body ng-app="DevwarsApp" ng-controller="TeamController as team">
+<div class="controlBar blue">
+    <div class="button" ng-click="team.select('html')" ng-class="team.getClass('html')">HTML</div>
+    <div class="button" ng-click="team.select('css')" ng-class="team.getClass('css')">CSS</div>
+    <div class="button" ng-click="team.select('js')" ng-class="team.getClass('js')">JS</div>
+</div>
+<div class="team team_blue">
+    <textarea name="" id="blue_html" class="html code" ng-class="team.getClass('html')"></textarea>
+    <textarea name="" id="blue_css" class="css code" ng-class="team.getClass('css')"></textarea>
+    <textarea name="" id="blue_js" class="js code" ng-class="team.getClass('js')"></textarea>
+</div>
+
+<script src="dist/bundle.js"></script>
+<script src="angular.min.js"></script>
+<script src="ngApp.js"></script>
+</body>
+</html>
